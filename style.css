@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.ramo {
+  padding: 15px;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ramo.completed {
+  text-decoration: line-through;
+  background: #d4edda;
+  border-color: #28a745;
+}
+.ramo.locked {
+  background: #e2e3e5;
+  color: #6c757d;
+  cursor: not-allowed;
+}
